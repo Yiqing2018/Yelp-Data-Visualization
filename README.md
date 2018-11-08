@@ -3,11 +3,12 @@
 
 ### website [Yelp data visualization](taviz2018.web.illinois.edu)  
 
-<!-- <p align="center">
- -->  <img width="300" src="https://ws3.sinaimg.cn/large/006tNbRwly1fx1dyfxv8gj31kw3bftr9.jpg">
-<!-- </p>
- -->
-![](![](https://ws3.sinaimg.cn/large/006tNbRwly1fx1dyfxv8gj31kw3bftr9.jpg)
+<p align="center">
+  <img width="400" src="https://ws3.sinaimg.cn/large/006tNbRwly1fx1dyfxv8gj31kw3bftr9.jpg">
+  <img width="400" src="https://ws3.sinaimg.cn/large/006tNbRwly1fx1dymiixpj31kw2upayv.jpg">
+
+</p>
+
 ![](https://ws3.sinaimg.cn/large/006tNbRwly1fx1dyfxv8gj31kw3bftr9.jpg)
 ![](https://ws3.sinaimg.cn/large/006tNbRwly1fx1dymiixpj31kw2upayv.jpg)
 ![](https://ws1.sinaimg.cn/large/006tNbRwly1fx1dyrsnlqj31kw35hnge.jpg)
