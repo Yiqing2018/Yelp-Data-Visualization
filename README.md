@@ -3,9 +3,10 @@
 
 ### website [Yelp data visualization](taviz2018.web.illinois.edu)  
 
-|Author|Yiqing Liu|
-|---|---
-|E-mail|yiqing5@:corn:.edu
+![](https://ws3.sinaimg.cn/large/006tNbRwly1fx1dyfxv8gj31kw3bftr9.jpg)
+![](https://ws3.sinaimg.cn/large/006tNbRwly1fx1dymiixpj31kw2upayv.jpg)
+![](https://ws1.sinaimg.cn/large/006tNbRwly1fx1dyrsnlqj31kw35hnge.jpg)
+![](https://ws3.sinaimg.cn/large/006tNbRwly1fx1dyyqviuj31kw1vh7e8.jpg)
 
 
 ### Dataset
@@ -16,7 +17,7 @@
 #### part of attributes of dataset
 
 |yelp_academic_dataset_user.json|yelp_academic_dataset_business.json|yelp_academic_dataset_review.json|
-|---|---|---|---
+|---|---|---
 |user_id|business_id|review_id
 |name|name|user_id
 |review_count|city|business_id
