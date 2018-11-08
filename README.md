@@ -17,15 +17,15 @@
 
 |yelp_academic_dataset_user.json|yelp_academic_dataset_business.json|yelp_academic_dataset_review.json|
 |---|---|---|---
-|user_id|business_id|review_id|
-|name|name|user_id|
-|review_count|city|business_id|
-|yelping_since|state|stars|
-|friends|latitude|date|
-|average_stars|longitude|text|
-|fans|stars|text|
-|funny|review_count|funny|
-|cool|categories|cool|
+|user_id|business_id|review_id
+|name|name|user_id
+|review_count|city|business_id
+|yelping_since|state|stars
+|friends|latitude|date
+|average_stars|longitude|text
+|fans|stars|text
+|funny|review_count|funny
+|cool|categories|cool
 
 
 
