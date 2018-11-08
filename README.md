@@ -2,7 +2,6 @@
 # Data Visualization Project
 
 ### website (https://www.dataviz2018.web.illinois.edu)  
-[](https://www.dataviz2018.web.illinois.edu)  
 
 <p align="center">
 
