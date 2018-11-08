@@ -1,7 +1,7 @@
 ![](https://ws1.sinaimg.cn/large/006tNbRwly1fvh59oez3dj304t04uaap.jpg)
 # Data Visualization Project
 
-### website [Yelp data visualization](taviz2018.web.illinois.edu)  
+### website [Yelp data visualization](www.dataviz2018.web.illinois.edu)  
 
 <p align="center">
 
