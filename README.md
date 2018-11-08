@@ -16,7 +16,7 @@
 #### part of attributes of dataset
 
 |yelp_academic_dataset_user.json|yelp_academic_dataset_business.json|yelp_academic_dataset_review.json|
-|---|---
+|---|---|---|---
 |user_id|business_id|review_id|
 |name|name|user_id|
 |review_count|city|business_id|
@@ -32,5 +32,6 @@
 ****
 
 ### data preprocessing
- [Python code]()  
+
+[Python code](https://github.com/Yiqing2018/Yelp-Data-Visualization/tree/master/preprocessing)  
 
