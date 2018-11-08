@@ -1,7 +1,7 @@
 ![](https://ws1.sinaimg.cn/large/006tNbRwly1fvh59oez3dj304t04uaap.jpg)
 # Data Visualization Project
 
-### website (https://www.dataviz2018.web.illinois.edu)  
+### 1.website (https://www.dataviz2018.web.illinois.edu)  
 
 <p align="center">
 
@@ -22,7 +22,7 @@
 
 
 
-### Dataset
+### 2.Dataset
 #### scource
 
 [Yelp academic dataset](https://www.kaggle.com/yelp-dataset/yelp-dataset)  
@@ -44,7 +44,7 @@
 
 ****
 
-### data preprocessing
+### 3.Data Preprocessing
 
 [Python code](https://github.com/Yiqing2018/Yelp-Data-Visualization/tree/master/preprocessing)  
 
