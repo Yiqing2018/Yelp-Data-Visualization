@@ -4,8 +4,11 @@
 ### website [Yelp data visualization](taviz2018.web.illinois.edu)  
 
 <p align="center">
-  <img width="400" src="https://ws3.sinaimg.cn/large/006tNbRwly1fx1dyfxv8gj31kw3bftr9.jpg">
-  <img width="400" src="https://ws3.sinaimg.cn/large/006tNbRwly1fx1dymiixpj31kw2upayv.jpg">
+
+  <img width="200" src="https://ws1.sinaimg.cn/large/006tNbRwly1fx1e0u1ly4j31kw1md1l1.jpg">
+  <img width="200" src="https://ws3.sinaimg.cn/large/006tNbRwly1fx1dyfxv8gj31kw3bftr9.jpg">
+  <img width="200" src="https://ws3.sinaimg.cn/large/006tNbRwly1fx1dyfxv8gj31kw3bftr9.jpg">
+  <img width="200" src="https://ws3.sinaimg.cn/large/006tNbRwly1fx1dymiixpj31kw2upayv.jpg">
 
 </p>
 
