@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Review</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="context.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+	<script>
+        d3version3=d3
+        window.d3=null
+    </script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js'></script>
+  
+      
+      <style>
+      .colorBox {
+          width: 30px;
+	      height: 20px;
+	      /*vertical-align: top;*/
+      	  border: 1px;
+      	  border-radius: 3px;
+      	  display: inline-block;
+      	  margin: 10px;
+      	  background: #eee;
+      	  border: solid 1px #fff;
+      	  box-shadow: 0 0 4px 0 rgba(0,0,0,.2);
+      }
+
+.one {
+	background: #D1EAD9;
+}
+
+.two {
+	background: #E6E6FA;
+}
+
+.three {
+	background: #FFE4C4; 
+}
+
+.four {
+	background: #D1DFEA;
+}
+
+.five {
+	background: #FFE4E1;
+}
+
+
+
+path {
+	stroke: #fefefe;
+	stroke-width: 2px;
+}
+
+
+.myTooltip {
+	-webkit-transition: 100ms all ease;
+	-moz-transition: 100ms all ease;
+	-o-transition: 100ms all ease;
+	-ms-transition: 100ms all ease;
+	transition: 100ms  all ease;
+	visibility: hidden;
+	z-index: 9999;
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+	width: 100px;
+}
+
+.tooltipContent {
+	text-align: center;
+	display: block;
+	width: 60px;
+	background: #555;
+	padding: 5px 0;
+	line-height: 1;
+	font-size: 14px;
+	border-radius: 3px;
+	position: relative;
+	color:white;
+}
+.tooltipContent::after {
+	content: '';
+	border-right: solid 0px transparent; 
+	border-left: solid 10px transparent;
+	border-top: solid 10px #555;
+	position: absolute;
+	bottom: -6px;
+	right: 0;
+}
+      
+      
+
+
+
+
+
+
+
+    .axis path,.axis line {
+        fill: none;
+        stroke: black;
+        
+        stroke-width: 0.5px;
+        shape-rendering: crispEdges;
+    }
+
+    .x.axis,.y.axis{
+            stroke: lightgrey;
+            fill:lightgrey;
+
+        /*display: none;*/
+    }
+
+
+    .line {
+        fill: none;
+        stroke: steelblue;
+        stroke-width: 1.5px;
+    }
+    /*svg{*/
+    /*    border:1px solid black;*/
+    /*}*/
+    
+    /*.grid {*/
+    /*    fill: none;*/
+    /*    shape-rendering: crispEdges;*/
+    /*    stroke: lightgrey;*/
+    /*    opacity: 0.7;*/
+    /*    stroke-width: 1px;*/
+    /*}*/
+    .segmentText{
+        cursor:pointer;
+    }
+    div.tooltip {
+        position: absolute;
+        text-align: center;
+        width: 120px;
+        height: 30px;
+        padding: 5px;
+        font: 14px;
+        background: white;
+        border: solid 2px lightgrey;
+        border-radius: 8px;
+        pointer-events: none;
+        font-family: Comic Sans MS;
+
+    }    
+
+      
+      
+      
+      
+      
+      
+      
+      </style>
+
+
+    
+</head>
+<body>
+
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">Data Visualization</a>
+			</div>
+		</div>
+	</nav>	
+
+	<div class='title'><img src="pic/review.png"> Leave a review on Yelp!</div>
+	
+	
+    <div class="container">
+			<div class="row">
+			    
+			    <div class="box col-lg-10 col-md-10 col-sm-12 col-xs-12 
+			        col-lg-offset-2 col-md-offset-2">
+					<header>
+					</header>
+					<div class="summary">
+					 By the end of 2017, Yelp has <font size="5"><strong>148 million </strong></font> reviews !<br>
+					As of <font size="5"><strong>2017</strong></font>, Yelp employed a staff of over<font size="5"><strong> 80 </strong></font> community managers that organize parties 
+					for prolific reviewers, send encouraging messages to reviewers and host classes for small business owners.<br>
+					We'll be adding and updating as more statistics become available.
+					</div>
+		   		</div>		   	
+			    
+			    
+		   		<div class="box col-lg-8 col-md-8 col-sm-8 col-xs-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+					<div class='question'><img src='/pic/question.png'>
+					Distribution of All Reviews
+					</div>
+					<hr/>
+					<div class='epa'>
+					   data source: recent reviews in Year 2017<br>
+					   	<font color='red'>Only part of real data due to server memory limit</font><br>
+
+					   <font size="4"><a id ='pie_refresh'>Update</a></font>
+
+					</div>
+		   		</div>
+		   		
+		   		
+		   		<div class="myTooltip"><span class="tooltipContent"></span></div>
+		   		
+		   		<div class="box col-lg-3 col-md-3 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2">
+		   		    
+		   		    <p align="left"><span class="colorBox one"></span>
+		   		        <span class="name">
+		   		            <i class="fa fa-star" style="color:orange" aria-hidden="true"></i>
+		   		            <i class="fa fa-star" style="color:#DEE2E6" aria-hidden="true"></i>
+		   		            <i class="fa fa-star" style="color:#DEE2E6" aria-hidden="true"></i>
+		   		            <i class="fa fa-star" style="color:#DEE2E6" aria-hidden="true"></i>
+		   		            <i class="fa fa-star" style="color:#DEE2E6" aria-hidden="true"></i>
+		   		    </span></p>
+		   		    
+		   		    <p align="left"><span class="colorBox two"></span><span class="name">
+		   		        <i class="fa fa-star" style="color:orange" aria-hidden="true"></i>
+		   		        <i class="fa fa-star" style="color:orange" aria-hidden="true"></i>
+		   		        <i class="fa fa-star" style="color:#DEE2E6" aria-hidden="true"></i>
+		   		        <i class="fa fa-star" style="color:#DEE2E6" aria-hidden="true"></i>
+		   		        <i class="fa fa-star" style="color:#DEE2E6" aria-hidden="true"></i>
+		   		    </span></p>
+		   		    
+		   		    <p align="left"><span class="colorBox three"></span><span class="name">
+		   		        <i class="fa fa-star" style="color:orange" aria-hidden="true"></i>
+		   		        <i class="fa fa-star" style="color:orange" aria-hidden="true"></i>
+		   		        <i class="fa fa-star" style="color:orange" aria-hidden="true"></i>
+		   		        <i class="fa fa-star" style="color:#DEE2E6" aria-hidden="true"></i>
+		   		        <i class="fa fa-star" style="color:#DEE2E6" aria-hidden="true"></i>
+		   		    </span></p>
+		   		    
+		   		    <p align="left"><span class="colorBox four"></span><span class="name">
+		   		        <i class="fa fa-star" style="color:orange" aria-hidden="true"></i>
+		   		        <i class="fa fa-star" style="color:orange" aria-hidden="true"></i>
+		   		        <i class="fa fa-star" style="color:orange" aria-hidden="true"></i>
+		   		        <i class="fa fa-star" style="color:orange" aria-hidden="true"></i>
+		   		        <i class="fa fa-star" style="color:#DEE2E6" aria-hidden="true"></i>
+		   		    </span></p>
+		   		    
+		   		    <p align="left"><span class="colorBox five"></span><span class="name">
+		   		        <i class="fa fa-star" style="color:orange" aria-hidden="true"></i>
+		   		        <i class="fa fa-star" style="color:orange" aria-hidden="true"></i>
+		   		        <i class="fa fa-star" style="color:orange" aria-hidden="true"></i>
+		   		        <i class="fa fa-star" style="color:orange" aria-hidden="true"></i>
+		   		        <i class="fa fa-star" style="color:orange" aria-hidden="true"></i>		   		        
+		   		    </span></p>
+		   		</div>
+		   		
+		   		<div class="box col-lg-4 col-md-4 col-sm-12 col-xs-12" style="height:350px">
+		   		    <div id="chart">
+					</div>
+				</div>
+				
+		   		<div class="box col-lg-8 col-md-8 col-sm-8 col-xs-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+				<div class='conclusion'>
+					   <ul>
+					       <li>Easy to get high score</li>
+					       it seems 4 or 5 stars are "usual" on Yelp (over 50%)
+					       <li>“If everybody is special, then no one is.”</li>
+					       a list full of four-star restaurants makes for an overwhelming “paradox of choice” situation
+					   </ul>
+				</div>
+				</div>
+				
+				
+				<div class="box col-lg-8 col-md-8 col-sm-8 col-xs-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+					<div class='question'><img src='/pic/question.png'>
+					Line Plot of Review Counts
+					</div>
+					<hr/>
+					<div class='epa'>
+					    Hover your mouse over the point<br>
+					    <font color='red'>Only part of real data due to server memory limit</font><br>
+					  <font size="4"><a id ='line_refresh'>Update</a></font>
+
+					</div>
+		   		</div>
+				<div class="box col-lg-8 col-md-8 col-sm-8 col-xs-8 
+				col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1" style="height:450px">
+		   		       
+		   		       <div id="divChartTrends"></div>
+		   		</div>
+		   		
+		   		
+		   		<div class="box col-lg-8 col-md-8 col-sm-8 col-xs-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+				<div class='conclusion'>
+					   <ul>
+					       <li>Trend</li>
+					       More and more reviews?
+					       <li>Peaks and Troughs</li>
+					       	which month is more "productive"? WHY there are Troughs for these years?
+					       <li>Comparison</li>
+					       Users are more involved in Yelp or disappointed and leave...
+					   </ul>
+				</div>
+				</div>		   		
+				
+				
+				
+		   		
+	     </div>
+	</div>
+
+
+
+
+
+	
+	<nav class="navbar fixed-bottom navbar-light bg-light">
+	    <div style="background-color: #f2f2f2; height:50px; padding-top:10px; border: 1px solid:#d9d9d9;">
+	        <i style="font-size:24px;" class="fa"><a href="https://www.facebook.com/people/Yiqing-Liu/100010015278784">&#xf230;</a></i>
+	        <a href="https://github.com/Yiqing2018/Yelp-Data-Visualization"><i class="fa fa-github" style="font-size:24px;color:black;"></i></a>
+	    </div>
+	</nav>
+	
+	<script src="js/pie.js"></script>
+	
+	<script type="text/javascript">
+	var button = document.getElementById('pie_refresh');
+	button.onclick = function(){
+	    var script = document.createElement("script");
+	    script.type = "text/javascript";
+	    script.src = "js/pie.js";
+	    document.getElementById("chart").innerHTML="";
+	    document.head.appendChild(script);
+	}
+	</script>
+	
+	<script src="js/line.js"></script>
+	
+	<script type="text/javascript">
+	var button = document.getElementById('line_refresh');
+	button.onclick = function(){
+	    var script = document.createElement("script");
+	    script.type = "text/javascript";
+	    script.src = "js/line.js";
+	    document.getElementById("divChartTrends").innerHTML="";
+	    document.head.appendChild(script);
+	}
+	</script>
+	
+
+	
+</body>
+
+</html>

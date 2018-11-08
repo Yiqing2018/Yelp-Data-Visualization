@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Business on Yelp</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="context.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js'></script>
+    <script src='https://unpkg.com/topojson-client@3'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.js'></script>
+    <script>
+        d3version4=d3
+        window.d3=null
+    </script>
+    
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+	<script>
+        d3version3=d3
+        window.d3=null
+    </script>
+
+
+
+
+</head>
+
+
+
+
+<body>
+
+    
+
+    
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">Data Visualization</a>
+			</div>
+		</div>
+	</nav>	
+
+	<div class='title'><img src="pic/business.png">Yelp for Business Owners!</div>
+	<div class="container">
+			<div class="row">
+			    
+			    <div class="box col-lg-10 col-md-10 col-sm-12 col-xs-12 
+			        col-lg-offset-2 col-md-offset-2 ">
+				    	<header>
+				    	</header>
+				    	<div class="summary">
+				    	    Yelp for Business Owners lets you post pictures, <font size="5"><strong>interact</strong></font> with customers, 
+				    	    and even buy <font size="5"><strong>targeted advertising</strong></font> to help grow your business.<br> 
+				    	    Ranging from free options that allow you to <font size="5"><strong>“claim”</strong></font> your business to paid subscriptions 
+				    	    providing advertisements and high-quality video support, 
+				    	    Yelp for Business Owners might be just the thing you have been looking for 
+				    	    to give your business a boost.
+				    	</div>
+		   	    	</div>		   	
+			    
+			    
+		   		<div class="box col-lg-8 col-md-8 col-sm-8 col-xs-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+					<div class='question'><img src='/pic/question.png'>
+					What kind of business are popular? 	  
+					<!--<a id ='submit'>REFRESH</a>-->
+
+					</div>
+					<hr/>
+					<div class='epa'>
+					    the more popular, the bigger font!<br>
+					    click <font size="4"><a id ='submit'>REFRESH</a></font> get a new layout
+					</div>
+		   		</div>
+		   		
+		   		<div class="box col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:400px">
+		   		    <div id="cloud"></div>
+
+		   		</div>
+		   		
+		   		
+		   		<div class="box col-lg-8 col-md-8 col-sm-8 col-xs-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+				<div class='conclusion'>
+					   <ul>
+					       <li>most popular</li>
+					       "Restaurant" 
+					       <li>suprising</li>
+					       	 Tours Health Medical
+					   </ul>
+				</div>
+				</div>	
+		   		
+		   		
+		   		<div class="box col-lg-8 col-md-8 col-sm-8 col-xs-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+					<div class='question'><img src='/pic/question.png'>
+					The most reviewed business on Yelp
+					</div>
+					<hr/>
+					<div class='epa'>
+					    The more reviewed,  the bigger circle! <br>
+					    Find out the most reviewed one!<br>
+					    <strong>NOT FACT</strong>(only show TOP 30 reviewed businesses on Yelp)... due to server memory limit
+					</div>
+		   		</div>
+		   		<div class="box col-lg-8 col-md-8 col-sm-8 col-xs-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2" style="height:400px;">
+					<div id='map'></div>
+		   		</div>			   		
+		   		<div class="box col-lg-8 col-md-8 col-sm-8 col-xs-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+		   		    <div id="tip">Hover over a point for more information!</div>
+		   		</div>		   		
+
+			</div>
+	</div>
+	
+	
+	
+	
+	<nav class="navbar fixed-bottom navbar-light bg-light">
+	    <div style="background-color: #f2f2f2; height:50px; padding-top:10px; border: 1px solid:#d9d9d9;">
+	        <i style="font-size:24px;" class="fa"><a href="https://www.facebook.com/people/Yiqing-Liu/100010015278784">&#xf230;</a></i>
+	        <a href="https://github.com/Yiqing2018/Yelp-Data-Visualization"><i class="fa fa-github" style="font-size:24px;color:black;"></i></a>
+	    </div>
+	</nav>
+
+    <script src="js/d3version3.layout.cloud.js"></script>	
+	<script src="js/word_cloud.js"></script>
+	<script src='js/map.js'></script>
+
+    
+    <script type="text/javascript">
+	var button = document.getElementById('submit');
+	button.onclick = function(){
+	    var script = document.createElement("script");
+	    script.type = "text/javascript";
+	    script.src = "js/word_cloud.js";
+	    document.getElementById("cloud").innerHTML="";
+	    document.head.appendChild(script);
+
+	}
+	</script>
+
+
+    
+</body>
+
+
+</html>

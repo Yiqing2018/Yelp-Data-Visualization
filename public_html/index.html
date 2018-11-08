@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Data Visualization</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">
+				Data Visualization</a>
+			</div>
+
+			<ul class="nav navbar-nav navbar-right">
+			<li>
+
+<!-- 				<a href="#"><span class="glyphicon glyphicon-user"></span>  register</a>
+ -->
+<!--  https://getbootstrap.com/docs/3.3/components/
+ -->
+ 
+                    <a href="https://www.yelp.com"><span class="glyphicon glyphicon-heart-empty"></span> Go Yelping</a>
+
+			</li>
+
+
+<!-- 				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>  Log in</a></li>
+ -->
+
+			
+			</ul>
+
+		</div>
+		
+	</nav>
+
+	<div id="myCarousel" class="carousel slide">
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li> 
+			<li data-target="#myCarousel" data-slide-to="3"></li> 
+		</ol>
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="pic/banner1.jpg" alt="1">
+				<div class="carousel-caption"></div>
+			</div>
+			<div class="item">
+				<img src="pic/banner2.jpg" alt="2">
+				<div class="carousel-caption" style="text-shadow: 4px 4px 8px black;">Life</div>				
+
+			</div>
+			<div class="item">
+				<img src="pic/banner3.jpg" alt="3">
+				<div class="carousel-caption">Food</div>
+
+			</div>
+			<div class="item">
+				<img src="pic/banner4.jpg" alt="4">
+				<div class="carousel-caption">Health</div>
+
+			</div>
+			
+		</div>
+	</div>
+
+
+
+	<div class="container">
+		<div class="row">
+		     <!--col-lg-offset-3-->
+			<div class="box col-lg-3 col-md-3 col-sm-3 col-xs-6">
+				<header>
+					<a href="user-profile.html"><img src="pic/v1.png"></a>
+					<p><a href="user-profile.html">User Profile</a></p>
+				</header>
+				<p>
+				</p>
+		    </div>
+			<div class="box col-lg-3 col-md-3 col-sm-3 col-xs-6">
+				<header>
+					<a href="business.html"><img src="pic/v2.png"></a>
+					<p><a href="business.html">Business</a></p>
+				</header>
+				<p>
+			    </p>
+		    </div>
+			<div class="box col-lg-3 col-md-3 col-sm-3 col-xs-6">
+				<header>
+					<a href="review.html"><img src="pic/v3.png"></a>
+					<p><a href="review.html">Review</a></p>
+				</header>
+				<p></p>
+		    </div>
+		    
+		    <div class="box col-lg-3 col-md-3 col-sm-3 col-xs-6">
+				<header>
+					<a href="dataset.html"><img src="pic/v4.png"></a>
+					<p><a href="dataset.html">Dataset</a></p>
+				</header>
+				<p>
+			</p>
+		    </div>
+		    
+		    
+		</div>
+		
+	</div>
+	<nav class="navbar fixed-bottom navbar-light bg-light">
+	    <div style="background-color: #f2f2f2; height:50px; padding-top:10px; border: 1px solid:#d9d9d9;">
+	    <i style="font-size:24px;" class="fa"><a href="https://www.facebook.com/people/Yiqing-Liu/100010015278784">&#xf230;</a></i>
+	        <a href="https://github.com/Yiqing2018/Yelp-Data-Visualization"><i class="fa fa-github" style="font-size:24px;color:black;"></i></a>
+	    </div>
+	</nav>
+
+
+
+	<script>
+		$(function(){
+			$('.carousel').carousel({
+				interval:2000,
+				wrap:true
+			})
+		})
+	</script>
+
+
+</body>
+</html>
