@@ -2,7 +2,7 @@
 # Data Visualization Project
 
 ### website 
-[Yelp data visualization](https://www.dataviz2018.web.illinois.edu)  
+[](https://www.dataviz2018.web.illinois.edu)  
 
 <p align="center">
 
