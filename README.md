@@ -24,9 +24,10 @@
 
 
 ### 2.Dataset
-#### scource
+A trove of reviews, businesses, users, tips and check-in data from Yelp  
+**Size**: 3GB  
+**Source**:[Kaggle](https://www.kaggle.com/yelp-dataset/yelp-dataset "Yelp dataset from Kaggle")
 
-[Yelp academic dataset](https://www.kaggle.com/yelp-dataset/yelp-dataset)  
 
 #### part of attributes of dataset
 
@@ -41,6 +42,8 @@
 |fans|stars|text
 |funny|review_count|funny
 |cool|categories|cool
+  
+these attributes are what I am gonna use in the project, they satify what I need and no nested structure.  
 
 
 ****
@@ -48,4 +51,17 @@
 ### 3.Data Preprocessing
 
 [Python code](https://github.com/Yiqing2018/Yelp-Data-Visualization/tree/master/preprocessing)  
+
+### 4.workflow
+![](https://ws1.sinaimg.cn/large/006tNbRwly1fxwgnztvhnj30qo0k0q3e.jpg)
+
+
+### 5.Troubles  
+There is D3(javascript) version conflict issue during my implementation.  
+Solution: Not alike jquery, there is no built-in methods to solve this, but there is a general solution: Renaming it!  
+Refernce: https://stackoverflow.com/questions/16156445/multiple-versions-of-a-script-on-the-same-page-d3-js
+
+
+
+
 
