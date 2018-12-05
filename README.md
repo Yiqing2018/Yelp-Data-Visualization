@@ -108,15 +108,20 @@ front end: html, css, bootstrap, javascript(d3)
 back end: MySQL, PHP deployed on cPanel 
 
 ### 4.workflow
-![](https://ws1.sinaimg.cn/large/006tNbRwly1fxwgnztvhnj30qo0k0q3e.jpg)
 
+<p align="center">
+  <img width="500" src="https://ws1.sinaimg.cn/large/006tNbRwly1fxwgnztvhnj30qo0k0q3e.jpg">
+
+</p>
 
 ### 5.Trouble/Challenge  
-- D3(javascript) version conflict
+- D3(javascript) version conflict  
+
 **Solution**: Not alike jquery, there is no built-in methods to solve this, but there is a general solution: Renaming it!  
 **Refernce**: https://stackoverflow.com/questions/16156445/multiple-versions-of-a-script-on-the-same-page-d3-js
 
-- access the database via PHP
+- access the database via PHP  
+
 **js**
 ```
 var ajax=new XMLHttpRequest();
