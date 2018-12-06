@@ -1,6 +1,21 @@
 ![](https://ws1.sinaimg.cn/large/006tNbRwly1fvh59oez3dj304t04uaap.jpg)
 # Data Visualization Project
 
+
+
+## Contents
+
+* [website](#1.website)
+* [Dataset](#2.Dataset)
+* [Project Plan](#3.Project-Plan)
+    * [data collection](#data-collection)
+    * [data cleaning](#data-cleaning)
+    * [data visualization stage1](#ata-visualization-stage1)
+    * [Modeling and evaluation](#Modeling-and-evaluation)
+    * [conclusion (data visualization stage2)](#conclusion-(data-visualization-stage2))
+
+
+
 ### 1.website (https://www.dataviz2018.web.illinois.edu) 
 ### demo video (https://www.youtube.com/watch?v=aZXAi0XovKE&feature=youtu.be)
 
@@ -110,7 +125,7 @@ back end: MySQL, PHP deployed on cPanel
 ### 4.workflow
 
 <p align="center">
-  <img width="500" src="https://ws1.sinaimg.cn/large/006tNbRwly1fxwgnztvhnj30qo0k0q3e.jpg">
+  <img width="600" src="https://ws2.sinaimg.cn/large/006tNbRwly1fxwptmioujj30qo0k0mxn.jpg">
 
 </p>
 
