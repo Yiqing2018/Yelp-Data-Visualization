@@ -5,18 +5,18 @@
 
 ## Contents
 
-* [website](#1.website)
-* [Dataset](#2.Dataset)
-* [Project Plan](#3.Project-Plan)
+* [website](#website)
+* [Dataset](#Dataset)
+* [Project Plan](#Project-Plan)
     * [data collection](#data-collection)
     * [data cleaning](#data-cleaning)
-    * [data visualization stage1](#ata-visualization-stage1)
-    * [Modeling and evaluation](#Modeling-and-evaluation)
-    * [conclusion (data visualization stage2)](#conclusion-(data-visualization-stage2))
+    * [data visualization](#ata-visualization)
+    * [implementations](#implementations)
+* [workflow](#workflow)
+* [Trouble/Challenge](#Trouble/Challenge)
 
 
-
-### 1.website (https://www.dataviz2018.web.illinois.edu) 
+### website (https://www.dataviz2018.web.illinois.edu) 
 ### demo video (https://www.youtube.com/watch?v=aZXAi0XovKE&feature=youtu.be)
 
 <p align="center">
