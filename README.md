@@ -8,14 +8,13 @@
 * [website](#website)
 * [demo video](#demo-video)
 * [Dataset](#Dataset)
-* [Project Plan](#Project-Plan)
+* [Exploratory Analysis Process](#Exploratory-Analysis-Process)
     * [data collection](#data-collection)
     * [data cleaning](#data-cleaning)
     * [data visualization](#ata-visualization)
     * [implementations](#implementations)
 * [workflow](#workflow)
-* [Trouble/Challenge](#Trouble//Challenge)
-* [Trouble/Challenge](#Trouble\/Challenge)
+* [Challenge](#Challenge)
 
 
 ### website (https://www.dataviz2018.web.illinois.edu) 
@@ -64,7 +63,7 @@ these attributes are what I am gonna use in the project, they satify what I need
 
 ***
 
-### Project Plan
+### Exploratory Analysis Process
 #### data collection  
 obtain the data, I collected the data from Kaggle. If it is needed for further research, I would use Python to grab some online data as supplement.  
 
@@ -131,7 +130,7 @@ back end: MySQL, PHP deployed on cPanel
 
 </p>
 
-### Trouble/Challenge  
+### Challenge  
 - D3(javascript) version conflict  
 
 **Solution**: Not alike jquery, there is no built-in methods to solve this, but there is a general solution: Renaming it!  
