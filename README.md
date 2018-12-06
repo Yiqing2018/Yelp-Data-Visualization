@@ -6,6 +6,7 @@
 ## Contents
 
 * [website](#website)
+* [demo video](#demo-video)
 * [Dataset](#Dataset)
 * [Project Plan](#Project-Plan)
     * [data collection](#data-collection)
@@ -38,7 +39,7 @@
 
 
 
-### 2.Dataset
+### Dataset
 A trove of reviews, businesses, users, tips and check-in data from Yelp  
 **Size**: 3GB  
 **Source**:[Kaggle](https://www.kaggle.com/yelp-dataset/yelp-dataset)
@@ -62,7 +63,7 @@ these attributes are what I am gonna use in the project, they satify what I need
 
 ***
 
-### 3.Project Plan
+### Project Plan
 #### data collection  
 obtain the data, I collected the data from Kaggle. If it is needed for further research, I would use Python to grab some online data as supplement.  
 
@@ -122,14 +123,14 @@ you may find out answers on my website: [click](https://www.dataviz2018.web.illi
 front end: html, css, bootstrap, javascript(d3)  
 back end: MySQL, PHP deployed on cPanel 
 
-### 4.workflow
+### workflow
 
 <p align="center">
   <img width="600" src="https://ws2.sinaimg.cn/large/006tNbRwly1fxwptmioujj30qo0k0mxn.jpg">
 
 </p>
 
-### 5.Trouble/Challenge  
+### Trouble/Challenge  
 - D3(javascript) version conflict  
 
 **Solution**: Not alike jquery, there is no built-in methods to solve this, but there is a general solution: Renaming it!  
