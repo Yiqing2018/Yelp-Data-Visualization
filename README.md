@@ -14,7 +14,8 @@
     * [data visualization](#ata-visualization)
     * [implementations](#implementations)
 * [workflow](#workflow)
-* [Trouble/Challenge](#Trouble/Challenge)
+* [Trouble/Challenge](#Trouble//Challenge)
+* [Trouble/Challenge](#Trouble\/Challenge)
 
 
 ### website (https://www.dataviz2018.web.illinois.edu) 
